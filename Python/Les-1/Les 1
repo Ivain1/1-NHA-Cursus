@@ -1,0 +1,25 @@
+print('Welkom bij het Datacenter') #Introductie (geen daadwerkelijke betekenis)
+print('Voer hier uw gegevens in, alstublieft') #Verzoek om data
+print('Volledige naam') #Verzoek voor specifieke informatie
+Invoer_Naam = str(input()) #Dwingt de data invoer om een 'string' type te zijn
+print('Geboorteplaats') #Verzoek voor specifieke informatie
+Invoer_Plaats = str(input()) #Dwingt de data invoer om een 'string' type te zijn
+print('Leeftijd') #Verzoek voor specifieke informatie
+Invoer_Leeftijd = int(input()) #dwingt de data invoer om een 'integer' (heel nummer) te zijn.
+
+print('Uw naam is:',Invoer_Naam) #Print de ingevoerde naam plus voortext in 1 regel
+print('Uw Geboorteplaats is:',Invoer_Plaats) #Print de ingevoerde plaats plus voortext in 1 regel
+print('Uw leeftijd is:', Invoer_Leeftijd) #Print de ingevoerde leeftijd plus voortext in 1 regel
+if Invoer_Leeftijd > 50: #Test of de leeftijd hoger is dan 50
+    print('U bent te snel verjaard voor de bebouwde kom') #Print leeftijds-gerelateerde grap (niet bijzonder grappig)
+
+exit(0) #Be-eindig de functie
+
+
+
+
+
+
+
+
+

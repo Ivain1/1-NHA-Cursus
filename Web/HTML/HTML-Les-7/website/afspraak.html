@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<title>TandartsAfspraak</title>
+<body>
+<h1>Tandarts Praktijk</h1>
+<div id="Text">
+<p>
+De tandartsenpraktijk van de buurt. Controle, boren, vullen, trekken en meer!
+</p>
+<div id="Images">
+<table name="imageTable">
+    <tb><img src="images/dentist1.jpg" width="300"></tb>
+    <tb><img src="images/dentist2.jpg" width="300"></tb>
+    <tb><img src="images/dentist3.jpg" width="300"></tb>
+</table>
+</div>
+<p>Maak hier een afspraak:</p>
+</div>
+
+<form id="AfspraakFormulier" action="https://formspree.io/f/xbjwqnvy" method="post">
+<fieldset id="gegevens">
+<table>
+<th>Uw gegevens</th>
+<tr><td><select name="geslacht">
+    <option value="M">Man</option>
+    <option value="F">Vrouw</option>
+    <option value="A">Anders</option>
+</select></td></tr>
+
+<tr><td><input type="text" name="voornaam" placeholder="Voornaam"></td></tr>
+<tr><td><input type="text" name="achternaam" placeholder="Achternaam"></td></tr>
+
+<tr></tr><td><input type="text" name="Straat" placeholder="Straatnaam en Huisnummer"></td></tr>
+
+<tr><td><input type="text" name="Woonplaats" placeholder="Woonplaats"></td></tr>
+<tr><td><select name="Land">
+    <option value="NL">Nederland</option>
+    <option value="BE">Belgie</option>
+    <option value="LU">Luxemburg</option>
+    <option value="DE">Duitsland</option>
+</select></td>
+</tr>
+</table>
+</fieldset>
+<fieldset id="Klachten">
+<h3>Klachten</h3>
+<table>
+<tr>
+<table>
+    <th>TandPijn</th>
+    <tr><td colspan="2">Bovenkaak Links</td><td><input type="checkbox" name="LBK"></td></tr>
+    <tr><td colspan="2">Bovenkaak Rechts</td><td><input type="checkbox" name="LBK"></td></tr>
+    <tr><td colspan="2">Onderkaak Links</td><td><input type="checkbox" name="LBK"></td></tr>
+    <tr><td colspan="2">Onderkaak Rehcts</td><td><input type="checkbox" name="LBK"></td></tr>
+</table>
+</tr>
+<tr>
+<td>
+<table>
+    <th>Paradontitis</th>
+    <tr><td colspan="2">Bovenkaak Links</td><td><input type="checkbox" name="LBK"></td></tr>
+    <tr><td colspan="2">Bovenkaak Rechts</td><td><input type="checkbox" name="LBK"></td></tr>
+    <tr><td colspan="2">Onderkaak Links</td><td><input type="checkbox" name="LBK"></td></tr>
+    <tr><td colspan="2">Onderkaak Rehcts</td><td><input type="checkbox" name="LBK"></td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+    <th>Kaakpijn</th>
+    <tr><td colspan="2">Bovenkaak Links</td><td><input type="checkbox" name="LBK"></td></tr>
+    <tr><td colspan="2">Bovenkaak Rechts</td><td><input type="checkbox" name="LBK"></td></tr>
+    <tr><td colspan="2">Onderkaak Links</td><td><input type="checkbox" name="LBK"></td></tr>
+    <tr><td colspan="2">Onderkaak Rehcts</td><td><input type="checkbox" name="LBK"></td></tr>
+</table>
+</td>
+</tr>
+</table>
+<br>
+<p>
+Heeft u een foto? Upload die hier:
+</p>
+<br>
+<input type="file" name="Foto">
+<br>
+</fieldset>
+<fieldset id="Detail">
+<h3>Beschrijf uw klachten in meer detail</h3>
+<textarea width="500" height="100"></textarea>
+<br>
+<br>
+<h4>Kies een moment voor uw afspraak</h4>
+<br>
+<input type="time" name="AfspraakTijd">
+<input type="date" name="AfspraakDag">
+<br>
+<br>
+<button type="submit" name="Bevestigen">Bevestigen</button>
+</fieldset>
+</form>
+</body>
+
+</html>
